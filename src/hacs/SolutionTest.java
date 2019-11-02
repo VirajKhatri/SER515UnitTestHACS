@@ -1,17 +1,13 @@
 package hacs;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
 class SolutionTest {
 
 	Solution solution = new Solution();
-
-	@Test
-	void testSolution() {
-		System.out.println("Solution object created");
-	}
 
 	@Test
 	void testToString() {
@@ -22,12 +18,14 @@ class SolutionTest {
 
 	@Test
 	void testGetGradeString() {
-		assertEquals("-1", solution.getGradeString());
+		String expected = "-1";
+		assertEquals(expected, solution.getGradeString());
 	}
 
 	@Test
 	void testGetGradeInt() {
-		assertEquals(0, solution.getGradeInt());
+		int expected = 0;
+		assertEquals(expected, solution.getGradeInt());
 	}
 
 	@Test

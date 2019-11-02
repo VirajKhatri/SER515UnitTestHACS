@@ -20,7 +20,7 @@ class ReminderVisitorTest {
 
 	@Test
 	void testReminderVisitor() {
-		System.out.println("ReminderVisitor implemented.");
+		new ReminderVisitor();
 	}
 
 	@Test

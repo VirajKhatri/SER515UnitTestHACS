@@ -14,6 +14,7 @@ public class CourseIterator implements Iterator<Object> {
 	int currentCourseNumber = -1;
 
 	public CourseIterator() {
+		System.out.println("Course Iterator Implemeted");
 	}
 
 	public CourseIterator(ClassCourseList courseList) {

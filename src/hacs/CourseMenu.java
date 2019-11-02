@@ -36,7 +36,6 @@ abstract public class CourseMenu extends JDialog {
 	JButton buttonLogout = new JButton();
 
 	public CourseMenu() {
-
 		try {
 			jbInit();
 		} catch (Exception e) {

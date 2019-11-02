@@ -6,7 +6,6 @@ class HacsTest {
 
 	@Test
 	void testHacs() {
-		System.out.println("HACS implemented.");
+		new Hacs();
 	}
-
 }

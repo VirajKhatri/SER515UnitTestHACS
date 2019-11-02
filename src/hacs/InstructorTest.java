@@ -17,7 +17,8 @@ class InstructorTest {
 
 	@Test
 	void testInstructor() {
-		assertEquals(1, instructor.type);
+		int expected = 1;
+		assertEquals(expected, instructor.type);
 	}
 
 }

@@ -20,6 +20,7 @@ public class SolutionIterator implements Iterator<Solution> {
 	}
 
 	public SolutionIterator() {
+		System.out.println("Solution Iterator Implemented");
 	}
 
 	public SolutionIterator(SolutionList thesolutionlist) {

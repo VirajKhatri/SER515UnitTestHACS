@@ -18,6 +18,7 @@ public class SolutionMenu extends JDialog {
 	private static final long serialVersionUID = 1L;
 
 	public SolutionMenu() {
+		System.out.println("Solution Menu Implemented.");
 	}
 
 	void showMenu(Solution theSolution) {

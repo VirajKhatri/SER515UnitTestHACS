@@ -18,5 +18,6 @@ public class SolutionList extends ArrayList<Solution> {
 	private static final long serialVersionUID = 1L;
 
 	public SolutionList() {
+		System.out.println("Solution List Implemented");
 	}
 }

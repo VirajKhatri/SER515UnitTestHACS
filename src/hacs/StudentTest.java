@@ -11,7 +11,8 @@ class StudentTest {
 
 	@Test
 	void testStudent() {
-		assertEquals(0, student.type);
+		int expected = 0;
+		assertEquals(expected, student.type);
 	}
 
 	@Test

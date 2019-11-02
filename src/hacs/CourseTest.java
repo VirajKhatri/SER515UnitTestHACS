@@ -20,8 +20,9 @@ class CourseTest {
 
 	@Test
 	void testAddAssignment() {
+		int expected = 1;
 		course.addAssignment(assignment);
-		assertEquals(1, course.assignmentList.size());
+		assertEquals(expected, course.assignmentList.size());
 	}
 
 	@Test

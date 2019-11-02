@@ -6,7 +6,7 @@ class SolutionListTest {
 
 	@Test
 	void testSolutionList() {
-		System.out.println("SolutionList implemented.");
+		new SolutionList();
 	}
 
 }

@@ -23,6 +23,7 @@ public class Solution {
 	boolean reported = false;
 
 	public Solution() {
+		System.out.println("Solution Implemented ");
 	}
 
 	public String getTheAuthor() {

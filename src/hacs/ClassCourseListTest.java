@@ -9,14 +9,10 @@ class ClassCourseListTest {
 	ClassCourseList classCourseList = new ClassCourseList();
 
 	@Test
-	void testClassCourseList() {
-		System.out.println("classCourseList object created.");
-	}
-
-	@Test
 	void testInitializeFromFile() {
+		int expected = 3;
 		classCourseList.initializeFromFile("CourseInfo.txt");
-		assertEquals(3, classCourseList.size());
+		assertEquals(expected, classCourseList.size());
 	}
 
 	@Test

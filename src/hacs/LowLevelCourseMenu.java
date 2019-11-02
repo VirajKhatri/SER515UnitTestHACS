@@ -8,6 +8,7 @@ public class LowLevelCourseMenu extends CourseMenu {
 	private static final long serialVersionUID = 1L;
 
 	public LowLevelCourseMenu() {
+		System.out.println("Lower level course menu implemented");
 	}
 
 	void showMenu(Course theCourse) {

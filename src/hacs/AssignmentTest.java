@@ -14,11 +14,6 @@ class AssignmentTest {
 	Solution solution = new Solution();
 
 	@Test
-	void testAssignment() {
-		System.out.println("assignment object created.");
-	}
-
-	@Test
 	void testSetDueDate() {
 		Date dueDate = new Date();
 		assignment.setDueDate(dueDate);
@@ -39,18 +34,14 @@ class AssignmentTest {
 
 	@Test
 	void testAddSolution() {
+		int expected = 1;
 		assignment.addSolution(solution);
-		assertEquals(1, assignment.getTheSolutionList().size());
+		assertEquals(expected, assignment.getTheSolutionList().size());
 	}
 
 	@Test
 	void testSubmitSolution() {
-		System.out.println("submitSolution object created.");
-	}
-
-	@Test
-	void testGetSolutionList() {
-		System.out.println("getSolutionList object created.");
+		assignment.submitSolution();
 	}
 
 	@Test
@@ -67,8 +58,9 @@ class AssignmentTest {
 
 	@Test
 	void testGetSolutionIterator() {
+		int expected = 0;
 		SolutionIterator solutionIterator = assignment.getSolutionIterator();
-		assertEquals(0, solutionIterator.solutionlist.size());
+		assertEquals(expected, solutionIterator.solutionlist.size());
 	}
 
 	@Test

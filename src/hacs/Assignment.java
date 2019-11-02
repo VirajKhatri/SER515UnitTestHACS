@@ -26,6 +26,7 @@ public class Assignment {
 	}
 
 	public Assignment() {
+		System.out.println("Assignment implemented");
 	}
 
 	public void setAssignmentName(String assignmentName) {
@@ -72,9 +73,11 @@ public class Assignment {
 	}
 
 	public void submitSolution() {
+		System.out.println("Submit Solution Implemented");
 	}
 
 	public void getSolutionList() {
+		System.out.println("Get Solution Implemented");
 	}
 
 	// return the solution of the give name

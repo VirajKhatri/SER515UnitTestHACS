@@ -22,6 +22,7 @@ public class Facade {
 	Person thePerson;
 
 	public Facade() {
+		System.out.println("Facade Implemented");
 	}
 
 	static public boolean login(UserInfoItem userinfoItem) {

@@ -11,16 +11,12 @@ class FacadeTest {
 	ClassCourseList classCourseList = new ClassCourseList();
 
 	@Test
-	void testFacade() {
-		System.out.println("Facade object created.");
-	}
-
-	@Test
 	void testSubmitSolution() {
+		int expected = 1;
 		Assignment theAssignment = new Assignment();
 		Solution theSolution = new Solution();
 		facade.submitSolution(theAssignment, theSolution);
-		assertEquals(1, theAssignment.getTheSolutionList().size());
+		assertEquals(expected, theAssignment.getTheSolutionList().size());
 	}
 
 	@Test
@@ -33,19 +29,21 @@ class FacadeTest {
 
 	@Test
 	void testCreateCourseList() {
+		int expected = 3;
 		facade.createCourseList();
-		assertEquals(3, facade.theCourseList.size());
+		assertEquals(expected, facade.theCourseList.size());
 	}
 
 	@Test
 	void testAttachCourseToUser() {
+		int expected = 2;
 		UserInfoItem userInfoItem = new UserInfoItem();
 		userInfoItem.userType = UserInfoItem.USER_TYPE.Student;
 		userInfoItem.strUserName = "yaya";
 		facade.createUser(userInfoItem);
 		facade.createCourseList();
 		facade.attachCourseToUser();
-		assertEquals(2, facade.thePerson.getCourseList().size());
+		assertEquals(expected, facade.thePerson.getCourseList().size());
 	}
 
 }

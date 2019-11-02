@@ -20,7 +20,7 @@ import javax.swing.JRadioButton;
 public class CourseSelectDlg extends JDialog {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	// 0 HighLevel presentation 1 LowLevel Experiment
 	ClassCourseList theCourseList;
 	Course selectedCourse;

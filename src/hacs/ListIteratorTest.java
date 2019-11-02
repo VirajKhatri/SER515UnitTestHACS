@@ -10,17 +10,15 @@ import org.junit.jupiter.api.Test;
 
 class ListIteratorTest {
 
-	@Test
-	void testListIterator() {
-		System.out.println("ListIterator object created.");
-	}
+	ListIterator listIterator = new ListIterator();
 
 	@Test
 	void testListIteratorArrayListOfObject() {
+		int expected = 1;
 		ArrayList<Object> testList = new ArrayList<>();
 		testList.add(1);
 		ListIterator listIterator = new ListIterator(testList);
-		assertEquals(1, listIterator.getTheList().size());
+		assertEquals(expected, listIterator.getTheList().size());
 	}
 
 	@Test
@@ -41,12 +39,13 @@ class ListIteratorTest {
 
 	@Test
 	void testRemove() {
+		int expected = 0;
 		ArrayList<Object> testList = new ArrayList<>();
 		testList.add(1);
 		ListIterator listIterator = new ListIterator(testList);
 		listIterator.next();
 		listIterator.remove();
-		assertEquals(0, listIterator.getTheList().size());
+		assertEquals(expected, listIterator.getTheList().size());
 	}
 
 }

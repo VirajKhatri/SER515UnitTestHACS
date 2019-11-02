@@ -16,6 +16,7 @@ public class Hacs {
 	static Facade theFacade = new Facade();
 
 	public Hacs() {
+		System.out.println("HACS Implemented");
 	}
 
 	public static void main(String[] args) {

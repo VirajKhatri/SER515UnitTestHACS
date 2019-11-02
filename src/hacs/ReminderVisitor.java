@@ -27,6 +27,7 @@ public class ReminderVisitor extends NodeVisitor {
 	Reminder mReminder;
 
 	public ReminderVisitor() {
+		System.out.println("Reminder Visitor Implemented");
 	}
 
 	public ReminderVisitor(Reminder reminder) {

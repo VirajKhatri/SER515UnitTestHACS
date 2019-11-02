@@ -12,16 +12,12 @@ class CourseIteratorTest {
 	ClassCourseList classCourseList = new ClassCourseList();
 
 	@Test
-	void testCourseIterator() {
-		System.out.println("CourseInterator object implemented.");
-	}
-
-	@Test
 	void testCourseIteratorClassCourseList() {
+		int expected = 1;
 		Course course = new Course("SER 515", 1);
 		classCourseList.add(course);
 		courseIterator = new CourseIterator(classCourseList);
-		assertEquals(1, courseIterator.getTheCourseList().size());
+		assertEquals(expected, courseIterator.getTheCourseList().size());
 	}
 
 	@Test
@@ -42,12 +38,13 @@ class CourseIteratorTest {
 
 	@Test
 	void testRemove() {
+		int expected = 0;
 		Course course = new Course("SER 515", 1);
 		classCourseList.add(course);
 		CourseIterator courseIterator = new CourseIterator(classCourseList);
 		courseIterator.next();
 		courseIterator.remove();
-		assertEquals(0, courseIterator.getTheCourseList().size());
+		assertEquals(expected, courseIterator.getTheCourseList().size());
 	}
 
 	@Test

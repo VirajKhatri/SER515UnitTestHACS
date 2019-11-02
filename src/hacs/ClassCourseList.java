@@ -19,6 +19,7 @@ public class ClassCourseList extends ArrayList<Course> {
 	private static final long serialVersionUID = 1L;
 
 	public ClassCourseList() {
+		System.out.println("Class Course List Implemented");
 	}
 
 	// initialize the list by reading from the file.

@@ -23,6 +23,7 @@ public class HighLevelCourseMenu extends CourseMenu {
 	private static final long serialVersionUID = 1L;
 
 	public HighLevelCourseMenu() {
+		System.out.println("High level course menu implemented");
 	}
 
 	void showMenu(Course theCourse) {

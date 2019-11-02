@@ -1,6 +1,8 @@
 package hacs;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +13,7 @@ class SolutionIteratorTest {
 
 	@Test
 	void testSolutionIterator() {
-		System.out.println("SolutionIterator implemented.");
+		new SolutionIterator();
 	}
 
 	@Test
@@ -23,10 +25,11 @@ class SolutionIteratorTest {
 
 	@Test
 	void testMoveToHead() {
+		int expected = -1;
 		solutionList.add(solution);
 		SolutionIterator solutionIterator = new SolutionIterator(solutionList);
 		solutionIterator.moveToHead();
-		assertEquals(-1, solutionIterator.getCurrentSolutionNumber());
+		assertEquals(expected, solutionIterator.getCurrentSolutionNumber());
 	}
 
 	@Test
@@ -53,11 +56,12 @@ class SolutionIteratorTest {
 
 	@Test
 	void testRemove() {
+		int expected = 0;
 		solutionList.add(solution);
 		SolutionIterator solutionIterator = new SolutionIterator(solutionList);
 		solutionIterator.next();
 		solutionIterator.remove();
-		assertEquals(0, solutionIterator.solutionlist.size());
+		assertEquals(expected, solutionIterator.solutionlist.size());
 	}
 
 }
